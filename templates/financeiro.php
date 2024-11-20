@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
     <head>
@@ -47,49 +47,27 @@
                         <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Brasilia</a></small>
                         <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">campoconecta@gmail.com</a></small>
                     </div>
-                    <div class="top-link pe-2">
-                        <a href="#" class="text-white"><small class="text-white mx-2">Politica de Privacidade</small>/</a>
-                        <a href="#" class="text-white"><small class="text-white mx-2">Termos de Uso</small></a>
-                    </div>
                 </div>
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Campo Conecta</h1></a>
+                    <a href="/" class="navbar-brand"><h1 class="text-primary display-6">Campo Conecta</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
-                            <a href="index.html" class="nav-item nav-link active">Início</a>
-                            <a href="shop.html" class="nav-item nav-link">Loja</a>
-                            <a href="shop-detail.html" class="nav-item nav-link">Shop Detail</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Paginas</a>
-                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="cart.html" class="dropdown-item">Cart</a>
-                                    <a href="chackout.html" class="dropdown-item">Chackout</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contate-nos</a>
+                            <a href="/" class="nav-item nav-link">Home</a>
+                            <a href="contato" class="nav-item nav-link">Entre em contato</a>
                         </div>
                         <div class="d-flex m-3 me-0">
-                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
-                            <a href="#" class="position-relative me-4 my-auto">
-                                <i class="fa fa-shopping-bag fa-2x"></i>
-                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
-                            </a>
-                            <a href="consumidor" class="my-auto">
-                                <i class="fas fa-user fa-2x"></i>
-                            </a>
+                            <a href="login" class="btn border border-secondary bg-white">Produtor</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
-        <!-- Navbar End -->
+            </div>
 
 
         <!-- Modal Search Start -->
@@ -128,46 +106,39 @@
         <div class="container">
             <div class="row g-4 mt-3">
                 <div class="col-5 bg-light">
-                    <h1 class="text-center text-black display-4">NOME DO USUÁRIO</h1>
-                    <p>Info</p>
-                    <p>Info</p>
-                    <p>Info</p>
-                    <p>Info</p>
+                    <h1 class="text-center text-black display-4">Suas financias</h1>
+                    <hr>
+                    <p class="mb-0">Ganhos: +R$2430</p>
+                    <hr>
+                    <p class="mb-0">Gastos: -R$1420</p>
+                    <hr>
+                    <p class="mb-0">Total: R$1010</p>
+                    <hr>
+                    <h5>Resumo: Ótima situação financeira</h5>
                 </div>
                 <div class="col-7 bg-light">
-                    <h1 class="text-center text-black display-6">LISTA DE PEDIDOS</h1>
-                    <table class="table-bordered table table-borded table-striped table-hover">
-                        <tr class="table-dark">
-                            <td>DATA PEDIDO</td>
-                            <td>PRODUTO</td>
-                            <td>VALOR</td>
-                            <td>ESTADO DO PEDIDO</td>
-                        </tr>
-                        <tr>
-                            <td>02/10/2024</td>
-                            <td>Laranja</td>
-                            <td>40</td>
-                            <td>EM ANÁLIZE</td>
-                        </tr>
-                        <tr>
-                            <td>13/02/2024</td>
-                            <td>Abacate</td>
-                            <td>34.40</td>
-                            <td>ENTREGUE</td>
-                        </tr>
-                        <tr>
-                            <td>30/11/2024</td>
-                            <td>Maça</td>
-                            <td>12.30</td>
-                            <td>ACEITO</td>
-                        </tr>
-                        <tr>
-                            <td>24/05/2024</td>
-                            <td>Minho</td>
-                            <td>13.82</td>
-                            <td>NEGADO</td>
-                        </tr>
-                    </table>
+                    <h1 class="text-center text-black display-6">Adicionar entrada/saída de renda</h1>
+                    <p>(Ainda não funcional)</p>
+                    <form action="addProduto" method="POST">
+                        <div class="mb-3">
+                            <label>Descrição</label>
+                            <input type="text" name="descFinanceiro" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label>Tipo</label><br>
+                            <input type="radio" id="tipoFinanceiro" name="tipoFinanceiro" value="entrada">
+                            <label for="entrada">Entrada (+)</label><br>
+                            <input type="radio" id="tipoFinanceiro" name="tipoFinanceiro" value="saida">
+                            <label for="saida">Saída(-)</label>
+                        </div>
+                        <div class="mb-3">
+                            <label>Valor</label>
+                            <input type="number" name="valorFinanceiro" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-danger">ADICIONAR</button>
+                        </div>
+                        </form>
                 </div>
             </div>
         </div>
@@ -181,16 +152,12 @@
                     <div class="row g-4">
                         <div class="col-lg-3">
                             <a href="#">
-                                <h1 class="text-primary mb-0">Fruitables</h1>
-                                <p class="text-secondary mb-0">Fresh products</p>
+                                <h1 class="text-primary mb-0">Campo Conecta</h1>
+                                <p class="text-secondary mb-0">Produtos frescos
+                                </p>
                             </a>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mx-auto">
-                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
-                            </div>
-                        </div>
+    
                         <div class="col-lg-3">
                             <div class="d-flex justify-content-end pt-3">
                                 <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
@@ -204,49 +171,32 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
-                            <h4 class="text-light mb-3">Why People Like us!</h4>
-                            <p class="mb-4">typesetting, remaining essentially unchanged. It was 
-                                popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
-                            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
+                            <h4 class="text-light mb-3">Por que comprar na Campo Conecta</h4>
+                            <p class="mb-4">Compre em nosso site e apoie produtores locais! Aqui, você encontra produtos frescos e baratos diretamente da zona rural, ajudando os pequenos agricultores a venderem de forma rápida e prática. É bom para você, para o produtor e para a comunidade!</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Shop Info</h4>
-                            <a class="btn-link" href="">About Us</a>
-                            <a class="btn-link" href="">Contact Us</a>
-                            <a class="btn-link" href="">Privacy Policy</a>
-                            <a class="btn-link" href="">Terms & Condition</a>
-                            <a class="btn-link" href="">Return Policy</a>
-                            <a class="btn-link" href="">FAQs & Help</a>
+                            <h4 class="text-light mb-3">Informações</h4>
+                            <a class="btn-link" href="">Contate-nos</a>
+                            <a class="btn-link" href="">Politicas de Privacidade</a>
+                            <a class="btn-link" href="">Termos e Condições</a>
+                            <a class="btn-link" href="">Politicas de Retorno</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Account</h4>
-                            <a class="btn-link" href="">My Account</a>
-                            <a class="btn-link" href="">Shop details</a>
-                            <a class="btn-link" href="">Shopping Cart</a>
-                            <a class="btn-link" href="">Wishlist</a>
-                            <a class="btn-link" href="">Order History</a>
-                            <a class="btn-link" href="">International Orders</a>
-                        </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
-                            <h4 class="text-light mb-3">Contact</h4>
-                            <p>Address: 1429 Netus Rd, NY 48247</p>
-                            <p>Email: Example@gmail.com</p>
-                            <p>Phone: +0123 4567 8910</p>
-                            <p>Payment Accepted</p>
-                            <img src="../static/img/payment.png" class="img-fluid" alt="">
+                            <h4 class="text-light mb-3">Contato</h4>
+                            <p>Email: campoconecta@gmail.com</p>
+                            <p>Celular: 61 94567 8910</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Footer End -->
-
         <!-- Copyright Start -->
         <div class="container-fluid copyright bg-dark py-4">
             <div class="container">

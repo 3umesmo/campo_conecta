@@ -47,45 +47,26 @@
                         <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Brasilia</a></small>
                         <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">campoconecta@gmail.com</a></small>
                     </div>
-                    <div class="top-link pe-2">
-                        <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
-                        <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
-                        <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
-                    </div>
                 </div>
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="/" class="navbar-brand"><h1 class="text-primary display-6">Fruitables</h1></a>
+                    <a href="/" class="navbar-brand"><h1 class="text-primary display-6">Campo Conecta</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
                             <a href="/" class="nav-item nav-link">Home</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Categorias</a>
-                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="verdutas" class="dropdown-item">Verduras</a>
-                                    <a href="frutas" class="dropdown-item">Frutas</a>
-                                    <a href="outros" class="dropdown-item">Outros</a>
-                                </div>
-                            </div>
                             <a href="contato" class="nav-item nav-link">Entre em contato</a>
-                            <a href="gerenciamento" class="nav-item nav-link">Pagina de gerenciamento(Produor)</a>
                         </div>
                         <div class="d-flex m-3 me-0">
-                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
-                            <a href="#" class="position-relative me-4 my-auto">
-                                <i class="fa fa-shopping-bag fa-2x"></i>
-                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
-                            </a>
-                            <a href="#" class="my-auto">
-                                <i class="fas fa-user fa-2x"></i>
-                            </a>
+                            <a href="login" class="btn border border-secondary bg-white">Produtor</a>
                         </div>
                     </div>
                 </nav>
+            </div>
+        </div>
             </div>
         </div>
         <!-- Navbar End -->
@@ -130,18 +111,16 @@
                     <div class="col-12">
                         <div class="row g-4">
                             <div class="col-lg-6">
-                                <div class="border rounded">
-                                    <a href="#">
-                                        <img src="../static/img/single-item.jpg" class="img-fluid rounded" alt="Image">
-                                    </a>
-                                </div>
+                                <a href="#">
+                                    <img src="../static/img/imgProduto_{{id}}.jpg" class="img-fluid rounded" alt="Image">
+                                </a>
                             </div>
                             <div class="col-lg-6">
                                 <h4 class="fw-bold mb-3">{{nome}}</h4>
                                 <p class="mb-3">Categoria: {{categoria}}</p>
                                 <h6 class="mb-4">{{descricao}}</h6>
                                 <div class="input-group quantity mb-5">
-                                    <a type="submit" class="btn border border-secondary rounded-pill px-3 text-primary">Entrar em contato</a>
+                                    <a href="https://wa.me/55{{tel}}? text=Estou interessado(a) no(a) {{nome}}, gostaria de comprar {{qtd}} unidades, totalizando R$ {{valorTotal}} reais." type="submit" class="btn border border-secondary rounded-pill px-3 text-primary">Entrar em contato</a>
                                 </div>
                             </div>
                             <div class="col-6">
@@ -185,16 +164,12 @@
                     <div class="row g-4">
                         <div class="col-lg-3">
                             <a href="#">
-                                <h1 class="text-primary mb-0">Fruitables</h1>
-                                <p class="text-secondary mb-0">Fresh products</p>
+                                <h1 class="text-primary mb-0">Campo Conecta</h1>
+                                <p class="text-secondary mb-0">Produtos frescos
+                                </p>
                             </a>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="position-relative mx-auto">
-                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                                <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
-                            </div>
-                        </div>
+    
                         <div class="col-lg-3">
                             <div class="d-flex justify-content-end pt-3">
                                 <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
@@ -208,49 +183,32 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
-                            <h4 class="text-light mb-3">Why People Like us!</h4>
-                            <p class="mb-4">typesetting, remaining essentially unchanged. It was 
-                                popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
-                            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
+                            <h4 class="text-light mb-3">Por que comprar na Campo Conecta</h4>
+                            <p class="mb-4">Compre em nosso site e apoie produtores locais! Aqui, você encontra produtos frescos e baratos diretamente da zona rural, ajudando os pequenos agricultores a venderem de forma rápida e prática. É bom para você, para o produtor e para a comunidade!</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Shop Info</h4>
-                            <a class="btn-link" href="">About Us</a>
-                            <a class="btn-link" href="">Contact Us</a>
-                            <a class="btn-link" href="">Privacy Policy</a>
-                            <a class="btn-link" href="">Terms & Condition</a>
-                            <a class="btn-link" href="">Return Policy</a>
-                            <a class="btn-link" href="">FAQs & Help</a>
+                            <h4 class="text-light mb-3">Informações</h4>
+                            <a class="btn-link" href="">Contate-nos</a>
+                            <a class="btn-link" href="">Politicas de Privacidade</a>
+                            <a class="btn-link" href="">Termos e Condições</a>
+                            <a class="btn-link" href="">Politicas de Retorno</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Account</h4>
-                            <a class="btn-link" href="">My Account</a>
-                            <a class="btn-link" href="">Shop details</a>
-                            <a class="btn-link" href="">Shopping Cart</a>
-                            <a class="btn-link" href="">Wishlist</a>
-                            <a class="btn-link" href="">Order History</a>
-                            <a class="btn-link" href="">International Orders</a>
-                        </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
-                            <h4 class="text-light mb-3">Contact</h4>
-                            <p>Address: 1429 Netus Rd, NY 48247</p>
-                            <p>Email: Example@gmail.com</p>
-                            <p>Phone: +0123 4567 8910</p>
-                            <p>Payment Accepted</p>
-                            <img src="../static/img/payment.png" class="img-fluid" alt="">
+                            <h4 class="text-light mb-3">Contato</h4>
+                            <p>Email: campoconecta@gmail.com</p>
+                            <p>Celular: 61 94567 8910</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Footer End -->
-
         <!-- Copyright Start -->
         <div class="container-fluid copyright bg-dark py-4">
             <div class="container">
