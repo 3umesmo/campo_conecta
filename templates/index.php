@@ -47,42 +47,21 @@
                         <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">Brasilia</a></small>
                         <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">campoconecta@gmail.com</a></small>
                     </div>
-                    <div class="top-link pe-2">
-                        <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
-                        <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
-                        <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
-                    </div>
                 </div>
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="/" class="navbar-brand"><h1 class="text-primary display-6">Fruitables</h1></a>
+                    <a href="/" class="navbar-brand"><h1 class="text-primary display-6">Campo Conecta</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
                             <a href="/" class="nav-item nav-link">Home</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Categorias</a>
-                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="verdutas" class="dropdown-item">Verduras</a>
-                                    <a href="frutas" class="dropdown-item">Frutas</a>
-                                    <a href="outros" class="dropdown-item">Outros</a>
-                                </div>
-                            </div>
                             <a href="contato" class="nav-item nav-link">Entre em contato</a>
-                            <a href="gerenciamento" class="nav-item nav-link">Pagina de gerenciamento(Produor)</a>
                         </div>
                         <div class="d-flex m-3 me-0">
-                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
-                            <a href="#" class="position-relative me-4 my-auto">
-                                <i class="fa fa-shopping-bag fa-2x"></i>
-                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
-                            </a>
-                            <a href="#" class="my-auto">
-                                <i class="fas fa-user fa-2x"></i>
-                            </a>
+                            <a href="login" class="btn border border-secondary bg-white">Produtor</a>
                         </div>
                     </div>
                 </nav>
@@ -97,10 +76,6 @@
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
                     <div class="modal-body d-flex align-items-center">
                         <div class="input-group w-75 mx-auto d-flex">
                             <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
@@ -120,10 +95,6 @@
                     <div class="col-md-12 col-lg-7">
                         <h4 class="mb-3 text-secondary">Comidas 100% organicas</h4>
                         <h1 class="mb-5 display-3 text-primary">Vegetais e Frutas</h1>
-                        <div class="position-relative mx-auto">
-                            <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
-                            <button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Procurar</button>
-                        </div>
                     </div>
                     <div class="col-md-12 col-lg-5">
                         <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
@@ -214,26 +185,7 @@
                 <div class="tab-class text-center">
                     <div class="row g-4">
                         <div class="col-lg-4 text-start">
-                            <h1>Outros Produtos</h1>
-                        </div>
-                        <div class="col-lg-8 text-end">
-                            <ul class="nav nav-pills d-inline-flex text-center mb-5">
-                                <li class="nav-item">
-                                    <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
-                                        <span class="text-dark" style="width: 130px;">Todos Produtos</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="d-flex py-2 m-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-2">
-                                        <span class="text-dark" style="width: 130px;">Vegetais</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-3">
-                                        <span class="text-dark" style="width: 130px;">Frutas</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <h1>Produtos</h1>
                         </div>
                     </div>
                     <div class="tab-content">
@@ -252,128 +204,7 @@
         </div>
         <!-- Fruits Shop End-->
 
-        <!-- Vesitable Shop Start-->
-        <div class="container-fluid vesitable py-5">
-            <div class="container py-5">
-                <h1 class="mb-0">Legumes Orgânicos Frescos
-                </h1>
-                <div class="owl-carousel vegetable-carousel justify-content-center">
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="../static/img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Parsely</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"> Entrar em contato</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="../static/img/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Parsely</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"> Entrar em contato</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="../static/img/vegetable-item-3.png" class="img-fluid w-100 rounded-top bg-light" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Banana</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"> Entrar em contato</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="../static/img/vegetable-item-4.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Bell Papper</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"> Entrar em contato</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="../static/img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Potatoes</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"> Entrar em contato</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="../static/img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Parsely</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"> Entrar em contato</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="../static/img/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Potatoes</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"> Entrar em contato</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="../static/img/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Vegetable</div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Parsely</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"> Entrar em contato</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Vesitable Shop End -->
+        
 
 
         <!-- Banner Section Start-->
@@ -385,7 +216,6 @@
                             <h1 class="display-3 text-white">Frutas Frescas</h1>
                             <p class="fw-normal display-3 text-dark mb-4">baratas</p>
                             <p class="mb-4 text-dark">Frutas colhidas no dia, garantindo mais sabor e qualidade. Mais saúde para você e incentivo para os produtores!</p>
-                            <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">Compre agora</a>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -471,11 +301,6 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Conta</h4>
-                            <a class="btn-link" href="">Minha Conta</a>
-                            <a class="btn-link" href="">Historico de compras</a>
-                        </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
